@@ -1,5 +1,26 @@
-#mybutao {
-    background-color: black;
-    width: 10px;
-    height: 5px;
+*{
+       margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.highlight {
+    color: rgb(5, 82, 5);
+    font-weight: bold;
+}
+
+.highlight1 {
+    color: rgb(8, 131, 8);
+    font-weight: bold;
+}
+
+header {
+    background-color: rgb(255, 250, 233);
+    height: 120px;
+}
+
+h1 {
+    text-align: center;
+    transform: translateY(40px);
+    font-size: 50px;
 }

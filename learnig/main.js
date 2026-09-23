@@ -11,3 +11,10 @@
 let nome ="davi";
 let idade = 20;
 console.log(nome, idade);
+
+
+"texto com aspas duplas" /**texto de aspas simples/duplas são iguais */
+'texto com aspas simples'
+`texto 
+com 
+crase`/**com crase posso pular linha */

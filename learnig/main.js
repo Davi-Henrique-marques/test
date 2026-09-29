@@ -1,65 +1,30 @@
 /**
- *   let -> posso trocar o valor da variavel
- *   const -> constante, não posso trocar o valor da variavel
- *   var -> descontinuado
+ * getElementById = traz todo elemento do html que tenha o id especificado
+ * getElementsByClass = traz todos os elementos do html que tenham a classe especificada
+ * getElementsByTagName = traz todos os elementos do html que tenham o name especificado
+ * getElementsByTag = traz todos os elementos do html que tenham a tag especificada
  * 
- *   console.log() -> imprime no console 
- *   "" -> string
- *   sem ""-> numero
+ * document = é o objeto que representa o documento HTML carregado no navegador
  */
 
-let nome ="davi";
-let idade = 20;
-
-
-"texto com aspas duplas" /**texto de aspas simples/duplas são iguais */
-'texto com aspas simples'
-`texto com crase` /**crase é usado para colocar variaveis dentro do texto */
-
-const mystring = `meu nome é ${nome} e minha idade é ${idade}`;
-console.log(mystring);
-
+const span = document.getElementsByClassName("highlight");
+console.log(span);
 
 /**
- * number-numero
- * string-texto
- * boolean-verdadeiro ou falso
- * object-objeto
-*/
-
-
-const name = "rodolfo";
-const age = 20;
-const adress = "rua dos bobos";
-
-const person = { /**o object serve para agrupar dados relacionados */
-    name: "rodolfo",
-    age: 20,
-    adress: { /** objeto dentro de outro objeto */
-        name: "davi",
-        idade: 15
-    }
-
-}
-
-console.log (person.adress)
-
-
-/**
- * array-É uma estrutura de dados que armazena uma coleção de elementos,
- *       que podem ser de diferentes tipos, como números, strings, objetos, etc.
- *       Os elementos em um array são indexados por números inteiros, começando do zero.
+ * querySelector = traz o primeiro elemento do html que tenha o seletor especificado
+ * querySelectorAll = traz todos os elementos do html que tenham o seletor especificado
  */
 
-const myArray = [1, "texto", true, { name: "davi", idade: 15 }, 5];/**utiliza-se colchetes no array e vírgula para separar os elementos */
+const querySelector = document.querySelector("span");
+console.log(querySelector);
 
-const gerenciamento = [ /**o array pode ser utilizado para guadar dados de todas as pessoas em um único lugar */
-    {name: "davi", idade: 15},
-    {name: "rodolfo", idade: 20},/** o object é utilizado para agrupar dados de certas pessoas */
-    {name: "joão", idade: 25}
-]
+const button = document.querySelector(".button");/** para traser uma class utiliza-se . antes do nome da classe */
+console.log(button);
 
-/**               0  1  2  3   -- posição dos elementos começa no 0*/
-const myArray2 = [1, 2, 3, 4];
+/**
+ * . --> para traser uma class utiliza-se . antes do nome da classe
+ * # --> para traser um id utiliza-se # antes do nome do id
+ */
 
-console.log(myArray2[3]); /**para acessar um elemento do array, utiliza-se o nome do array e o índice do elemento entre colchetes */
+const element = document.querySelectorAll (".button");/** traz todo elemento coma classe "button" */
+console.log(element);

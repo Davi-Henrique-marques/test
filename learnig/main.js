@@ -1,30 +1,12 @@
 /**
- * getElementById = traz todo elemento do html que tenha o id especificado
- * getElementsByClass = traz todos os elementos do html que tenham a classe especificada
- * getElementsByTagName = traz todos os elementos do html que tenham o name especificado
- * getElementsByTag = traz todos os elementos do html que tenham a tag especificada
- * 
- * document = é o objeto que representa o documento HTML carregado no navegador
+ * addEventListener => é um método que adiciona um ouvinte de evento a um elemento HTML.
+ * Ele permite que você execute uma função específica quando um determinado evento ocorre nesse elemento,
+ *  como um clique, uma mudança de valor, ou qualquer outro tipo de interação do usuário.
  */
 
-const span = document.getElementsByClassName("highlight");
-console.log(span);
+const select = document.querySelector("select");//primeiro chamamos um elemnto para o js.
 
-/**
- * querySelector = traz o primeiro elemento do html que tenha o seletor especificado
- * querySelectorAll = traz todos os elementos do html que tenham o seletor especificado
- */
-
-const querySelector = document.querySelector("span");
-console.log(querySelector);
-
-const button = document.querySelector(".button");/** para traser uma class utiliza-se . antes do nome da classe */
-console.log(button);
-
-/**
- * . --> para traser uma class utiliza-se . antes do nome da classe
- * # --> para traser um id utiliza-se # antes do nome do id
- */
-
-const element = document.querySelectorAll (".button");/** traz todo elemento coma classe "button" */
-console.log(element);
+select.addEventListener("change", function() {//**depois colocamos a varianel + . + a propriedade*/
+console.log("troquei de valor");//entre os () colocamos o evento que o addEventListener deve nos avisar,
+// e a função que queremos executar quando o evento ocorrer.
+});

@@ -1,10 +1,8 @@
 /**
- * addEventListener() = ocorre determinada ação quando o evento especificado ocorre.
+ * <div class="container-main" style="background-color: white; width: 400px; height: 520px; margin-left: 500px; margin-top: 45px; border-radius: 10px; ">
+    <h2 style=" display: flex; text-align: center; margin-top: -410px;">Conversor de Moedas</h2>
+
+
+
+</div>
  */
-
-const button = document.querySelector("#button");//trouxe um botão ao js.
-
-//       propriedade    evento     ação que ocorrerá quando o evento ocorrer. 
-button.addEventListener("click", function () {
-              console.log("O botão foi clicado!");//o evento fica entre "" e a virgula separ os elementos do addEventListener.
-});

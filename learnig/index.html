@@ -4,20 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test file</title>
-    <style src="./style.css"></style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>CONHECIMENTO</h1>
-    
-<input type="text" id="input" placeholder="Digite algo...">
 
-<select id="select">
-    <option value="uppercase">ciência</option>
-    <option value="lowercase">matemática</option>
-    <option value="capitalize">português</option>
-</select>
+<header>
 
-    <button id="button">Enviar</button>
+    <h1 style="margin-left: 30px;"><span class="highlight">NU</span><span class="highlight1">BANK</span></h1>
+
+    <p style="color:white; margin-top: 23px; width: 35%; margin-left: 30px; font-size: 20px;">Descubra quanto vale á sua moeda em diferentes países</p>
+
+    <div class="img1">
+       <img  src="./Moedas Metálicas dos Estados Unidos e Brasil.png" alt="logo do nubank" width="180px" height="180px" class="img" 
+       style="margin-top: -140px; margin-left: 1000px;">
+    </div>
+
+</header>
+
+<main class="container">
+
+        <section class="conversor">
+
+            <label for="moedaOrigem">Converter de</label>
+            <select id="moedaOrigem">
+                <option value="BRL">🇧🇷 R$ Real brasileiro</option>
+                <option value="USD">🇺🇸 US$ Dólar americano</option>
+                <option value="EUR">🇪🇺 € Euro</option>
+            </select>
+
+            <label for="moedaDestino">Converter para</label>
+            <select id="moedaDestino">
+                <option value="USD">🇺🇸 US$ Dólar americano</option>
+                <option value="BRL">🇧🇷 R$ Real brasileiro</option>
+                <option value="EUR">🇪🇺 € Euro</option>
+            </select>
+
+            <label for="valor">Valor</label>
+            <input
+                type="number"
+                id="valor"
+                placeholder="Digite um valor"
+                min="0"
+                step="any"
+                value="10000"
+            >
+
+            <button id="btnConverter">Converter</button>
+
+            <div class="resultado">
+
+                <div class="moeda">
+                    <div class="bandeira" id="bandeiraOrigem">🇧🇷</div>
+                    <p id="nomeOrigem">Real brasileiro</p>
+                    <h2 id="valorOrigem">R$ 10.000,00</h2>
+                </div>
+
+                <div class="seta">⬇</div>
+
+                <div class="moeda">
+                    <div class="bandeira" id="bandeiraDestino">🇺🇸</div>
+                    <p id="nomeDestino">Dólar americano</p>
+                    <h2 id="valorDestino">US$ 2.000,00</h2>
+                </div>
+
+            </div>
+
+            <p class="aviso">
+                Cotação demonstrativa. Consulte uma cotação atualizada
+                para valores reais.
+            </p>
+
+        </section>
+
+    </main>
+
+
+
 </body>
     <script src="./main.js"></script>
 </html>
+
